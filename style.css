@@ -23,13 +23,14 @@ body{
 }
 
 #div1, #div2{
-    border: solid white;
+    border: solid black;
     margin-left: auto;
     margin-right: auto;
     /* height: 250px; */
     width: 400px;
     padding: 20px;
     box-shadow: 0 0 50px red;
+    border-radius: 10px;
 }
 
 /* #div2{
