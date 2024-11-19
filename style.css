@@ -50,6 +50,7 @@ body{
 
 #selena_content, #kendrick_content{
     width: 500px;
+    /* display: flex; */
     margin-left: auto;
     margin-right: auto;
     text-indent: 50px;
@@ -57,4 +58,8 @@ body{
     box-shadow: 0 0 20px white;
     border-radius: 5px;
     padding: 20px;
+}
+
+#content{
+    display: flex;
 }
