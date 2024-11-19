@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19th Nov Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="heading">
+        <h1>19th Nov Task (Div's with images and description using text overflow property)</h1>
+    </div>
+
+    <p style="text-align: center;">hover over the artist's tab to know more about them</p>
+
+    <div id="main_div">
+        <div id="div1">
+            <img src="./selena gomex.webp" alt="selena" title="selena" class="selena" id="selena">
+
+            <p>Selena Marie Gomez is an American singer, actress, producer, and businesswoman. She began her career as a
+                child actress, starring on the children's television series Barney & Friends, and rose to prominence as
+                a
+                teen idol, leading as Alex Russo on the Disney Channel sitcom Wizards of Waverly Place.
+            </p>
+
+        </div>
+
+        <div id="div2">
+            <img src="./kl.jpg" alt="kendrick" class="kendrick" title="kendrick">
+
+            <p>Kendrick Lamar Duckworth is an American rapper and songwriter. Regarded as one of the most influential
+                hip
+                hop artists of his generation, and one of the greatest rappers of all time, he is known for his
+                technical
+                artistry and complex songwriting.
+            </p>
+        </div>
+    </div>
+
+    <div id="selena_content">
+        <p>Selena Marie Gomez (/səˈliːnə ˈɡoʊmɛz/ sə-LEE-nə GOH-mez; born July 22, 1992) is an American singer, actress,
+            producer, and businesswoman. She began her career as a child actress, starring on the children's television
+            series Barney & Friends (2002–2004), and rose to prominence as a teen idol, leading as Alex Russo on the
+            Disney Channel sitcom Wizards of Waverly Place (2007–2012). As a singer, she signed with Hollywood Records
+            in 2008 and formed the pop rock band Selena Gomez & the Scene. The band released three studio albums, all of
+            which have been certified gold or higher by the Recording Industry Association of America (RIAA).
+        </p>
+    </div>
+
+    <div id="kendrick_content">
+        <p>Kendrick Lamar Duckworth (born June 17, 1987) is an    American rapper and songwriter. Regarded as one of the
+            most influential hip hop artists of his generation, and one of the greatest rappers of all time, he is known
+            for his technical artistry and complex songwriting. He was awarded the 2018 Pulitzer Prize for Music,
+            becoming the first musician outside of the classical and jazz genres to be honored.
+        </p>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    const div1 = document.getElementById("div1");
+    const selena_content = document.getElementById("selena_content");
+
+    div1.addEventListener("mouseover", () => {
+        selena_content.style.display = "block";
+    });
+
+    div1.addEventListener("mouseout", () => {
+        selena_content.style.display = "none";
+    });
+
+    const div2 = document.getElementById("div2")
+    const kendrick_content = document.getElementById("kendrick_content")
+
+    div2.addEventListener("mouseover", () => {
+        kendrick_content.style.display = "block";
+    });
+
+    div2.addEventListener("mouseout", () => {
+        kendrick_content.style.display = "none";
+    });
+</script>
